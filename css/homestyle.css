@@ -1,0 +1,161 @@
+/*CSS*/
+
+
+
+#home{
+	background-color: #7050A0;
+	width: 1000px;
+	height: 3000px;
+
+	position: absolute;
+	left:50%;
+	margin-left: -500px;
+	margin-top: -10px;
+
+}
+
+#circle{
+	background-color: transparent;
+	border-radius: 50%;
+	height: 300px;
+	width: 300px;
+
+	position: relative;
+	left:350px;
+	top: 50px;
+}
+
+
+
+#logo{
+	border-radius: 50%;
+	height: 100%;
+	width: auto;
+	position: relative;
+
+	/*glowy part*/
+    -webkit-animation: glow 3.2s ease-in-out infinite;
+    -moz-animation: glow 3.2s ease-in-out infinite;
+    animation: glow 3.2s ease-in-out infinite;
+	
+	/*flip part*/
+	transition-duration: 1.5s;
+    transition-property: transform;
+    transition-timing-function:ease-in-out;
+}
+
+#logo:hover{
+	transform: rotateY(360deg);
+    -webkit-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+     transition-duration: 1s;
+}
+
+@keyframes glow 
+	{
+	  40% { box-shadow: 0 0 30px #332266; }
+	}
+       
+
+.homelink{
+	font-family: quicksand, sans-serif;
+	color: white;
+	font-size: 20pt;
+	/*font-weight: bold; */
+}
+
+/* Home Links */
+
+#about{
+	position: absolute;
+	top:75px;
+	left: -200px;
+}
+
+#resume{
+	position: absolute;
+	top: 75px;
+	right:-200px;
+	
+}
+
+#artwork{
+	position: absolute;
+	top: 225px;
+	left: -200px;
+	
+}
+
+#contact{
+	position: absolute;
+	top: 225px;
+	right: -200px;
+}
+
+/* End Home Link*/
+
+
+/*INTERACTIVE*/
+a:link, #name:link{
+	color:white;
+}
+
+a:hover, #name:hover{
+	color:pink;
+
+	font-size: 21pt;
+	-webkit-transition: 175ms; 
+	-moz-transition: 175ms;
+	 transition: 175ms;
+}
+
+a:active, #name:active{
+	color:hotpink;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FONTS */
+
+@font-face {
+    font-family: 'quicksand';
+    src: url('fonts/quicksand_book-webfont.eot');
+    src: url('fonts/quicksand_book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/quicksand_book-webfont.woff2') format('woff2'),
+         url('fonts/quicksand_book-webfont.woff') format('woff'),
+         url('fonts/quicksand_book-webfont.ttf') format('truetype'),
+         url('fonts/quicksand_book-webfont.svg#quicksandbook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'water_streetregular';
+    src: url('fonts/waterst-webfont.eot');
+    src: url('fonts/waterst-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/waterst-webfont.woff2') format('woff2'),
+         url('fonts/waterst-webfont.woff') format('woff'),
+         url('fonts/waterst-webfont.ttf') format('truetype'),
+         url('fonts/waterst-webfont.svg#water_streetregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+
